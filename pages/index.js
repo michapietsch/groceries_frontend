@@ -1,7 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import Head from "next/head";
 import Nav from "../components/nav";
+import RecipesList from "../components/RecipesList";
 import "../resources/css/tailwind.css";
 
 const Home = () => (
@@ -11,6 +11,8 @@ const Home = () => (
     </Head>
 
     <Nav />
+
+    <RecipesList />
 
     <style jsx>{``}</style>
   </div>
