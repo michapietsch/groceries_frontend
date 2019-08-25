@@ -3,6 +3,7 @@ import RecipesListItem from "./RecipesListItem";
 
 const recipes = [
   {
+    id: 1,
     title: "Solyanka",
     groceries: [
       { title: "ham" },
@@ -13,6 +14,7 @@ const recipes = [
     ]
   },
   {
+    id: 2,
     title: "Pizza",
     groceries: [
       { title: "flour" },
@@ -30,7 +32,7 @@ const RecipesList = () => (
   <div>
     <ul>
       {recipes.map(recipe => (
-        <li>
+        <li key={recipe.id}>
           <RecipesListItem recipe={recipe} />
         </li>
       ))}
